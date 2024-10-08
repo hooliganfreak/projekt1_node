@@ -201,6 +201,7 @@ export function createPopup(content, confirm) {
 
     const confirmButton = createButton('Confirm', 'confirm-button', () => {
         confirm();
+        popup.remove();
     });
 
     popupContent.appendChild(confirmButton);
